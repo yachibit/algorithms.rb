@@ -28,10 +28,10 @@ module Algorithms::Sort
             container[l] = container[r]
             l += 1
           end
-           l += 1 while (container[l] <= pivot  && l < r)
-          if l < r
-            container[r] = container[l]
-            r -= 1
+          l += 1 while (container[l] <= pivot  && l < r)
+          if l < r
+            container[r] = container[l]
+            r -= 1
           end
         end
         container[l] = pivot
